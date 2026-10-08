@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gece gözlemi | Çocuk Üniversitemiz</title>
+  <meta name="description" content="Çocuk Üniversitemizin gece gözlemleri, güneş gözlemi, planetaryum ve mini roket atölyesi; gözlem hazırlığı ve güvenlik.">
+  <meta name="theme-color" content="#16235e">
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/ana.css">
+  <script src="../../assets/js/yukleyici.js" defer></script>
+</head>
+<body>
+  <cu-ust></cu-ust>
+
+  <main id="icerik">
+    <cu-sayfa-basligi>
+      <h1>Gece gözlemi</h1>
+      <p>Gökyüzünü teleskopla gözlemliyor, gözlem planını simülasyonla hazırlıyor ve astronomiyi atölyede roket üreterek öğreniyoruz.</p>
+    </cu-sayfa-basligi>
+
+    <div class="kapsayici dokuman">
+      <aside class="dokuman__sol"><cu-bolum-menusu></cu-bolum-menusu></aside>
+
+      <article class="dokuman__icerik">
+        <section class="akis">
+          <h2>Astronomi etkinlikleri</h2>
+          <ul class="izgara" style="--izgara-min: 16rem">
+            <li class="kutu"><span class="kutu__ikon"><cu-ikon ad="moon-star"></cu-ikon></span><h3 class="kutu__baslik">Gece gözlemi I ve II</h3><p>Eğitim yılı içinde iki gece gözlemi yapılır. İkinci gözlem, ilkinde öğrenilenlerin üzerine kurulur.</p></li>
+            <li class="kutu"><span class="kutu__ikon"><cu-ikon ad="sun"></cu-ikon></span><h3 class="kutu__baslik">Güneş gözlemi</h3><p>Uygun güneş filtresi takılmış teleskopla, eğitmen gözetiminde gündüz yapılır.</p></li>
+            <li class="kutu"><span class="kutu__ikon"><cu-ikon ad="orbit"></cu-ikon></span><h3 class="kutu__baslik">Planetaryum çalışması</h3><p>Stellarium ile gök olayları modellenir ve gözlem gecesi için plan hazırlanır.</p></li>
+            <li class="kutu"><span class="kutu__ikon"><cu-ikon ad="rocket"></cu-ikon></span><h3 class="kutu__baslik">Mini roket atölyesi</h3><p>Roket tasarlanır, üretilir, fırlatılır ve sonuçları ölçülür.</p></li>
+          </ul>
+        </section>
+
+        <section class="akis">
+          <h2>Gözlem gecesine hazırlık</h2>
+          <ul class="isaretli-liste">
+            <li>Stellarium ile gözlem saatinde gökyüzünde nelerin görüneceğini inceleyin.</li>
+            <li>Hava durumunu takip edin. Bulutlu havada gözlem ertelenir ve yeni tarih duyurulur.</li>
+            <li>Gece serin olur; mevsime göre kalın giysi getirin.</li>
+            <li>Işık gerekirse kırmızı ışıklı fener kullanın. Beyaz ışık, gözün karanlığa alışmasını bozar.</li>
+            <li>Gözlem defterinizi ve kaleminizi yanınızda bulundurun.</li>
+          </ul>
+        </section>
+
+        <section class="akis">
+          <h2>Neler gözlemleniyor?</h2>
+          <p>Gökyüzü koşullarına ve mevsime göre değişmekle birlikte gözlemlerde şunlara bakılır:</p>
+          <ul class="isaretli-liste">
+            <li>Ay'ın yüzeyi, kraterleri ve evreleri</li>
+            <li>O dönem görülebilen parlak gezegenler</li>
+            <li>Takımyıldızlar ve gökyüzünde yön bulma</li>
+            <li>Çift yıldızlar ve yıldız kümeleri</li>
+          </ul>
+        </section>
+
+        <section class="akis">
+          <h2>Güvenlik</h2>
+          <div class="not not--guvenlik"><cu-ikon ad="shield-check"></cu-ikon><div>
+            <p><strong>Güneş'e hiçbir zaman çıplak gözle, dürbünle ya da filtresiz teleskopla bakılmaz.</strong> Güneş gözlemi yalnızca uygun filtreyle ve eğitmen gözetiminde yapılır.</p>
+            <p>Gece etkinliklerine veli izin formuyla katılınır. Etkinlik sonunda öğrenciler teslim-alım protokolüne göre veliye teslim edilir.</p>
+          </div></div>
+        </section>
+
+        <section class="akis">
+          <h2>Canlı yayın ve izin formu</h2>
+          <div class="gece-paneli gece-paneli--kisa">
+            <span class="gece-paneli__etiket">Planlanan çalışma</span>
+            <p>Küçükçekmece'nin yüksek bir noktasından gökyüzünü 360° kamerayla canlı yayınlamayı planlıyoruz. Yayın bağlantısı hazır olduğunda QR kodu aşağıda görünecek.</p>
+          </div>
+        <div class="qr-alani">
+          <div class="qr-alani__bas">
+            <p>Canlı yayın bağlantısı ve gece etkinliği veli izin formu.</p>
+            <a class="dugme dugme--kucuk dugme--ikincil" href="../olcme/qr-merkezi.html"><cu-ikon ad="qr-code"></cu-ikon><span>QR merkezi</span></a>
+          </div>
+          <cu-qr-panosu grup="gece-gozlemi"></cu-qr-panosu>
+        </div>
+        </section>
+        <cu-sayfa-gecis></cu-sayfa-gecis>
+      </article>
+
+      <aside class="dokuman__sag"><cu-icindekiler></cu-icindekiler></aside>
+    </div>
+  </main>
+
+  <cu-alt></cu-alt>
+</body>
+</html>

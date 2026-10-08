@@ -1,0 +1,197 @@
+/* ==========================================================================
+   ÜST BÖLÜM — assets/js/bilesenler/ust-bolum.js şablonunun görünümü
+   ========================================================================== */
+
+cu-ust {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  min-height: var(--ust-yukseklik);
+}
+
+.atla-baglanti {
+  position: absolute;
+  left: 1rem;
+  top: -200px;
+  z-index: 100;
+  padding: 0.625rem 1rem;
+  border-radius: var(--yaricap-s);
+  background: var(--vurgu);
+  color: var(--murekkep-koyu);
+  font-weight: 600;
+  text-decoration: none;
+}
+.atla-baglanti:focus { top: 0.75rem; }
+
+.ust {
+  position: relative;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid var(--cizgi);
+  transition: box-shadow 0.2s ease;
+}
+@supports (backdrop-filter: blur(8px)) {
+  .ust { background: rgba(255, 255, 255, 0.86); backdrop-filter: saturate(1.5) blur(12px); }
+}
+.ust--kaydirildi { box-shadow: 0 12px 30px -22px rgba(14, 23, 66, 0.45); }
+
+.ust__ic {
+  max-width: calc(var(--genislik) + 2 * var(--kenar));
+  height: var(--ust-yukseklik);
+  margin-inline: auto;
+  padding-inline: var(--kenar);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ust__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-right: auto;
+  color: var(--murekkep);
+  text-decoration: none;
+  flex: none;
+}
+.ust__logo:hover { color: var(--murekkep); }
+.ust__logo img { width: 40px; height: 40px; }
+.ust__logo-metin { display: flex; flex-direction: column; line-height: 1.1; }
+.ust__site-adi { font: 700 1.1875rem/1.1 var(--yazi-baslik); letter-spacing: -0.015em; }
+.ust__kurum-adi { font-size: 0.75rem; color: var(--metin-soluk); margin-top: 0.1rem; }
+
+.ust__sag { display: flex; align-items: center; gap: 0.625rem; }
+.ust__eylem .ikon { width: 1.125rem; height: 1.125rem; }
+
+.ust-menu { list-style: none; margin: 0; padding: 0; }
+.ust-menu__dugme {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: 0;
+  background: none;
+  color: var(--metin);
+  font-family: var(--yazi-govde);
+}
+.ust-menu__ok { width: 1rem; height: 1rem; transition: transform 0.2s ease; }
+.ust-menu__oge.acik .ust-menu__ok { transform: rotate(180deg); }
+
+.ust-panel { display: none; }
+.ust-menu__oge.acik > .ust-panel { display: block; }
+
+.ust-panel__liste { list-style: none; margin: 0; padding: 0; }
+.ust-panel__baglanti {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.625rem 0.75rem;
+  border-radius: 12px;
+  color: var(--metin);
+  text-decoration: none;
+}
+.ust-panel__baglanti:hover { background: var(--kagit); color: var(--metin); }
+.ust-panel__baglanti[aria-current="page"] { background: var(--seviye-acik, var(--murekkep-acik)); }
+.ust-panel__ikon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 10px;
+  background: var(--seviye-acik, var(--murekkep-acik));
+  color: var(--seviye-koyu, var(--murekkep-2));
+}
+.ust-panel__ikon .ikon { width: 1.125rem; height: 1.125rem; }
+.ust-panel__metin { display: flex; flex-direction: column; gap: 0.1rem; min-width: 0; }
+.ust-panel__baslik { font-weight: 600; font-size: var(--t-1); line-height: 1.3; }
+.ust-panel__aciklama { font-size: 0.8125rem; line-height: 1.35; color: var(--metin-soluk); }
+
+.ust__menu-dugmesi {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--cizgi);
+  border-radius: 12px;
+  background: var(--beyaz);
+  color: var(--murekkep);
+}
+.ust__menu-dugmesi .ikon { width: 1.375rem; height: 1.375rem; }
+.ust__kapat { display: none; }
+cu-ust.menu-acik .ust__ac { display: none; }
+cu-ust.menu-acik .ust__kapat { display: block; }
+
+/* ---------------------------------------------------------------- Masaüstü */
+@media (min-width: 1080px) {
+  .ust__ic { gap: 1.5rem; }
+  .ust__logo { margin-right: 0; }
+  .ust__nav { margin-left: auto; }
+  .ust-menu { display: flex; gap: 0.125rem; }
+  .ust-menu__oge { position: relative; }
+  .ust-menu__dugme {
+    height: 2.5rem;
+    padding: 0 0.75rem 0 0.875rem;
+    border-radius: 999px;
+    font-size: var(--t-1);
+    font-weight: 500;
+  }
+  .ust-menu__dugme:hover,
+  .ust-menu__oge.acik > .ust-menu__dugme { background: var(--kagit); }
+  .ust-menu__oge--aktif > .ust-menu__dugme { color: var(--murekkep); font-weight: 600; background: var(--murekkep-acik); }
+
+  .ust-panel {
+    position: absolute;
+    top: calc(100% + 0.625rem);
+    left: 50%;
+    width: max-content;
+    min-width: 21rem;
+    padding: 0.5rem;
+    transform: translateX(-50%);
+    background: var(--beyaz);
+    border: 1px solid var(--cizgi);
+    border-radius: 18px;
+    box-shadow: var(--golge);
+  }
+  .ust-panel::before { content: ""; position: absolute; left: 0; right: 0; top: -0.75rem; height: 0.75rem; }
+  .ust-menu__oge.acik > .ust-panel { animation: ust-panel-ac 0.16s ease-out; }
+  .ust-panel__liste--iki { display: grid; grid-template-columns: repeat(2, 17rem); }
+  .ust-menu__oge:last-child .ust-panel { left: auto; right: 0; transform: none; }
+
+  .ust__nav .ust__eylem--mobil { display: none; }
+  .ust__menu-dugmesi { display: none; }
+}
+@keyframes ust-panel-ac {
+  from { opacity: 0; translate: 0 -6px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+/* ---------------------------------------------------------------- Mobil ve tablet */
+@media (max-width: 1079px) {
+  .ust__nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: calc(100vh - var(--ust-yukseklik));
+    height: calc(100dvh - var(--ust-yukseklik));
+    overflow-y: auto;
+    padding: 0.5rem var(--kenar) 2.5rem;
+    background: var(--beyaz);
+    border-top: 1px solid var(--cizgi);
+  }
+  cu-ust.menu-acik .ust__nav { display: block; }
+  .ust-menu__oge { border-bottom: 1px solid var(--cizgi); }
+  .ust-menu__dugme {
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-size: 1.0625rem;
+    font-weight: 600;
+  }
+  .ust-menu__oge--aktif > .ust-menu__dugme { color: var(--murekkep); }
+  .ust-panel { padding-bottom: 0.75rem; }
+  .ust__nav .ust__eylem--mobil { display: inline-flex; margin-top: 1.5rem; }
+}
+@media (max-width: 559px) {
+  .ust__sag .ust__eylem { display: none; }
+  .ust__kurum-adi { display: none; }
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dersler | Çocuk Üniversitemiz</title>
+  <meta name="description" content="Çocuk Üniversitemizde 1., 2., 3. ve 4. sınıflarda verilen derslerin amaçları, hedefleri ve ders çıktıları.">
+  <meta name="theme-color" content="#16235e">
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/ana.css">
+  <script src="../../assets/js/yukleyici.js" defer></script>
+</head>
+<body>
+  <cu-ust></cu-ust>
+
+  <main id="icerik">
+    <cu-sayfa-basligi>
+      <h1>Dersler</h1>
+      <p>Her dersin amacı, öğrencinin ders sonunda yapabilecekleri ve yılın sonunda ortaya koyduğu ürün.</p>
+    </cu-sayfa-basligi>
+
+    <div class="kapsayici dokuman">
+      <aside class="dokuman__sol"><cu-bolum-menusu></cu-bolum-menusu></aside>
+
+      <article class="dokuman__icerik">
+        <section class="akis">
+          <h2>1. sınıf dersleri</h2>
+          <p>Keşif yılı: öğrenme alışkanlıkları, bilimsel düşünme ve Akademik Atölye'deki altı alan.</p>
+          <cu-dersler sinif="1"></cu-dersler>
+        </section>
+
+        <section class="akis">
+          <h2>2. sınıf dersleri</h2>
+          <p>Beceri yılı: kodlama, tasarım, araştırma ve strateji; her derste ayrı bir ürün.</p>
+          <cu-dersler sinif="2"></cu-dersler>
+        </section>
+
+        <section class="akis">
+          <h2>3. sınıf uzmanlık atölyeleri</h2>
+          <p>Öğrenci bu dört atölyeden ikisini seçer. Seçimin nasıl yapıldığını <a href="../olcme/3-sinif-ders-secimi.html">3. sınıf ders seçimi</a> sayfasında bulabilirsiniz.</p>
+          <cu-dersler sinif="3" tum-haric></cu-dersler>
+        </section>
+
+        <section class="akis">
+          <h2>4. sınıf</h2>
+          <p>Proje yılı: danışman öğretmenle yürütülen grup projesi ve mezuniyet.</p>
+          <cu-dersler sinif="4" tum-haric></cu-dersler>
+        </section>
+
+        <section class="akis">
+          <h2>Dört yıl boyunca</h2>
+          <p>Yabancı Dil Atölyesi, hafta sonu programında dört yıl boyunca her sınıf seviyesinde haftada 3 ders saatidir. Öğrenciler sınıf seviyelerine göre değil, dil seviyelerine göre gruplanır. Hafta içi GELİŞİM programında İngilizce dersi yoktur. Ayrıntılar <a href="yabanci-dil.html">Yabancı dil</a> sayfasındadır.</p>
+          <cu-dersler sinif="tum"></cu-dersler>
+        </section>
+        <section class="akis">
+          <h2>Derslerin portfolyo çalışmaları</h2>
+          <p>Her dersin portfolyoya giren çalışmaları aşağıdadır. Bu çalışmalar yıl boyunca biriktirilir ve <a href="../atolyeler/portfolyo.html">öğrenci portfolyosunda</a> toplanır.</p>
+          <cu-dersler gorunum="portfolyo" baslik="Ders – portfolyo çalışmaları"></cu-dersler>
+        </section>
+
+        <cu-sayfa-gecis></cu-sayfa-gecis>
+      </article>
+
+      <aside class="dokuman__sag"><cu-icindekiler></cu-icindekiler></aside>
+    </div>
+  </main>
+
+  <cu-alt></cu-alt>
+</body>
+</html>

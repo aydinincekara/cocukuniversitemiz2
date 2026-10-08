@@ -1,0 +1,10 @@
+/* ==========================================================================
+   EKLER — kuruma özel ek stiller
+   --------------------------------------------------------------------------
+   Yeni bir sayfa ya da bölüm için stil gerekiyorsa buraya yazın.
+   Bu dosya en son katmandadır; buradaki kurallar diğer dosyaları ezer,
+   ancak diğer dosyaları bozmaz. Dosyayı silmek siteyi bozmaz.
+
+   Örnek:
+   .yeni-bolum { padding: 2rem; background: var(--s1-acik); }
+   ========================================================================== */

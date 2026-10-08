@@ -1,0 +1,27 @@
+/* ==========================================================================
+   ÇOCUK ÜNİVERSİTEMİZ — ANA STİL DOSYASI
+   --------------------------------------------------------------------------
+   Sayfalar yalnızca bu dosyayı çağırır. Diğer dosyalar aşağıda katmanlar
+   (@layer) hâlinde yüklenir.
+
+   KATMAN SIRASI NEDEN ÖNEMLİ?
+   Sonra gelen katman her zaman öncekini ezer; seçicinin ne kadar "güçlü"
+   yazıldığının önemi kalmaz. Böylece yeni bir CSS dosyası eklendiğinde
+   mevcut stiller beklenmedik şekilde bozulmaz.
+
+   Kendi eklemelerinizi ekler.css dosyasına yazın; en son katman odur.
+   ========================================================================== */
+
+@layer degiskenler, temel, duzen, dokuman, bilesenler, ust-bolum, alt-bolum, qr, sayfalar, ekler, yazdir;
+
+@import url("degiskenler.css") layer(degiskenler);
+@import url("temel.css") layer(temel);
+@import url("duzen.css") layer(duzen);
+@import url("dokuman.css") layer(dokuman);
+@import url("bilesenler.css") layer(bilesenler);
+@import url("ust-bolum.css") layer(ust-bolum);
+@import url("alt-bolum.css") layer(alt-bolum);
+@import url("qr.css") layer(qr);
+@import url("sayfalar.css") layer(sayfalar);
+@import url("ekler.css") layer(ekler);
+@import url("yazdir.css") layer(yazdir) print;

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1. sınıf değerlendirme | Çocuk Üniversitemiz</title>
+  <meta name="description" content="Çocuk Üniversitemizde 1. sınıf ölçme ve değerlendirme: ders ürünleri, Akademik Atölye ilgi haritası ve yıl sonu sınavı.">
+  <meta name="theme-color" content="#16235e">
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/ana.css">
+  <script src="../../assets/js/yukleyici.js" defer></script>
+</head>
+<body>
+  <cu-ust></cu-ust>
+
+  <main id="icerik">
+    <cu-sayfa-basligi>
+      <h1>1. sınıf değerlendirme</h1>
+      <p>Birinci yıl ürün sunumları, Akademik Atölye ilgi haritası ve yıl sonu sınavıyla tamamlanır.</p>
+    </cu-sayfa-basligi>
+
+    <div class="kapsayici dokuman">
+      <aside class="dokuman__sol"><cu-bolum-menusu></cu-bolum-menusu></aside>
+
+      <article class="dokuman__icerik">
+        <section class="akis">
+          <h2>Yıl boyunca</h2>
+          <p>Öğrenci her derste süreç içinde gözlemlenir ve öz değerlendirme formlarıyla kendi öğrenmesine bakmayı öğrenir. Akademik Atölye'deki her modülün sonunda kısa bir ilgi anketi doldurur.</p>
+        </section>
+
+        <section class="akis">
+          <h2>Ders ürünleri</h2>
+          <p>Her ders farklı bir ürünle tamamlanır ve ürünler her ders için ayrı değerlendirilir.</p>
+          <cu-dersler sinif="1" gorunum="tablo"></cu-dersler>
+        </section>
+
+        <section class="akis">
+          <h2>Akademik Atölye ilgi haritası</h2>
+          <p>Altı modülün her birinin sonunda öğrenci, o alanda ne kadar istekli olduğunu ve nedenini kısa bir anketle belirtir. Yıl sonunda bu cevaplar ve eğitmen gözlemleri bir araya getirilerek öğrencinin kişisel ilgi haritası oluşturulur.</p>
+          <div class="not"><cu-ikon ad="info"></cu-ikon><div><p>İlgi haritası bir not değildir. Üçüncü yıldaki <a href="3-sinif-ders-secimi.html">uzmanlık atölyesi seçiminde</a> öğrencinin ve velinin karar vermesine yardımcı olan bilgilerden biridir.</p></div></div>
+        </section>
+
+        <section class="akis">
+          <h2>Yıl sonu sınavı</h2>
+          <dl class="bilgi-listesi">
+            <div><dt>Kapsam</dt><dd>Yılın beş dersi</dd></div>
+            <div><dt>Biçim</dt><dd>Çevrim içi bölüm ve uygulamalı görevler</dd></div>
+            <div><dt>Tarih</dt><dd>Duyurularda ilan edilir</dd></div>
+            <div><dt>Sonuç</dt><dd>Gelişim raporuyla veliye</dd></div>
+          </dl>
+        </section>
+
+        <section class="akis">
+          <h2>Sınav ve anket bağlantıları</h2>
+        <div class="qr-alani">
+          <div class="qr-alani__bas">
+            <p>Kodları telefon kamerasıyla okutabilir ya da yazdırıp sınıf panosuna asabilirsiniz.</p>
+            <a class="dugme dugme--kucuk dugme--ikincil" href="../olcme/qr-merkezi.html"><cu-ikon ad="qr-code"></cu-ikon><span>QR merkezi</span></a>
+          </div>
+          <cu-qr-panosu grup="1-sinif"></cu-qr-panosu>
+        </div>
+        </section>
+        <cu-sayfa-gecis></cu-sayfa-gecis>
+      </article>
+
+      <aside class="dokuman__sag"><cu-icindekiler></cu-icindekiler></aside>
+    </div>
+  </main>
+
+  <cu-alt></cu-alt>
+</body>
+</html>

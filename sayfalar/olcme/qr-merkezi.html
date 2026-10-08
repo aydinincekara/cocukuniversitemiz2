@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QR merkezi | Çocuk Üniversitemiz</title>
+  <meta name="description" content="Çocuk Üniversitemizin yayındaki tüm sınav, anket, görüşme ve form bağlantılarının QR kodları.">
+  <meta name="theme-color" content="#16235e">
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/ana.css">
+  <script src="../../assets/js/yukleyici.js" defer></script>
+</head>
+<body>
+  <cu-ust></cu-ust>
+
+  <main id="icerik">
+    <cu-sayfa-basligi>
+      <h1>QR merkezi</h1>
+      <p>Tüm sınav, anket, görüşme ve form bağlantılarının QR kodları. Kodları okutabilir, indirebilir ya da yazdırıp panoya asabilirsiniz.</p>
+    </cu-sayfa-basligi>
+
+    <div class="kapsayici dokuman dokuman--genis">
+      <aside class="dokuman__sol"><cu-bolum-menusu></cu-bolum-menusu></aside>
+
+      <article class="dokuman__icerik">
+        <section class="akis">
+          <h2>Tüm kodlar</h2>
+          <cu-qr-panosu filtreli></cu-qr-panosu>
+        </section>
+
+        <section class="akis">
+          <h2>Nasıl kullanılır?</h2>
+          <ul class="isaretli-liste">
+            <li>Telefonunuzun kamerasını koda tutun ve açılan bağlantıya dokunun.</li>
+            <li>Tek bir kodu A4 afiş olarak yazdırmak için kartındaki <strong>Yazdır</strong> düğmesini kullanın.</li>
+            <li>Filtrelediğiniz ve yayında olan kodları tek sayfada toplu yazdırmak için <strong>Yayındakileri yazdır</strong> düğmesini kullanın.</li>
+            <li><strong>SVG indir</strong> ile kodu sunum ve belgelerde bozulmadan büyütebilirsiniz.</li>
+            <li>“Yakında” olarak görünen kayıtların bağlantısı henüz eklenmemiştir. Süreç başladığında kod burada ve ilgili sayfada kendiliğinden görünür.</li>
+          </ul>
+        </section>
+        <cu-sayfa-gecis></cu-sayfa-gecis>
+      </article>
+
+    </div>
+  </main>
+
+  <cu-alt></cu-alt>
+</body>
+</html>

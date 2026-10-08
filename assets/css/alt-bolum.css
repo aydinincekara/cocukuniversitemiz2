@@ -1,0 +1,67 @@
+/* ==========================================================================
+   ALT BÖLÜM — assets/js/bilesenler/alt-bolum.js şablonunun görünümü
+   ========================================================================== */
+
+cu-alt { margin-top: auto; }
+
+.alt {
+  background: var(--murekkep-koyu);
+  color: #c7cfe8;
+  font-size: var(--t-1);
+}
+.alt a { color: #c7cfe8; text-decoration: none; }
+.alt a:hover { color: var(--beyaz); text-decoration: underline; }
+.alt :focus-visible { outline-color: var(--vurgu); }
+
+.alt__ust,
+.alt__alt {
+  max-width: calc(var(--genislik) + 2 * var(--kenar));
+  margin-inline: auto;
+  padding-inline: var(--kenar);
+}
+
+.alt__ust {
+  display: grid;
+  gap: 2.5rem;
+  padding-top: clamp(3rem, 6vw, 4.5rem);
+  padding-bottom: 3rem;
+}
+@media (min-width: 960px) {
+  .alt__ust { grid-template-columns: minmax(0, 1fr) minmax(0, 2.3fr); gap: 4rem; }
+}
+
+.alt__logo { display: inline-flex; align-items: center; gap: 0.75rem; }
+.alt__logo:hover { text-decoration: none; }
+.alt__logo img { width: 44px; height: 44px; }
+.alt__site-adi { display: block; font: 700 1.25rem/1.1 var(--yazi-baslik); color: var(--beyaz); }
+.alt__kurum-adi { display: block; margin-top: 0.15rem; font-size: 0.8125rem; color: #a9b3d6; }
+.alt__tanitim { margin-top: 1.125rem; max-width: 38ch; line-height: 1.6; }
+.alt__iletisim { margin-top: 1.25rem; }
+
+.alt__menuler {
+  display: grid;
+  gap: 2rem 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+}
+.alt__baslik {
+  margin-bottom: 0.875rem;
+  font-family: var(--yazi-govde);
+  font-size: var(--t-1);
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--beyaz);
+}
+.alt__sutun ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+
+.alt__alt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: var(--t-0);
+  color: #a9b3d6;
+}
+.alt__ek { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }

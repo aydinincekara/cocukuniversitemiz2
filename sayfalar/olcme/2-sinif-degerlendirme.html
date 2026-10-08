@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2. sınıf değerlendirme | Çocuk Üniversitemiz</title>
+  <meta name="description" content="Çocuk Üniversitemizde 2. sınıf ölçme ve değerlendirme: ders ürünleri, yıl sonu sınavı ve uzmanlık atölyesi tanıtımları.">
+  <meta name="theme-color" content="#16235e">
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/ana.css">
+  <script src="../../assets/js/yukleyici.js" defer></script>
+</head>
+<body>
+  <cu-ust></cu-ust>
+
+  <main id="icerik">
+    <cu-sayfa-basligi>
+      <h1>2. sınıf değerlendirme</h1>
+      <p>İkinci yıl ürün sunumları ve yıl sonu sınavıyla tamamlanır; öğrenci aynı dönemde üçüncü yılın uzmanlık atölyelerini tanır.</p>
+    </cu-sayfa-basligi>
+
+    <div class="kapsayici dokuman">
+      <aside class="dokuman__sol"><cu-bolum-menusu></cu-bolum-menusu></aside>
+
+      <article class="dokuman__icerik">
+        <section class="akis">
+          <h2>Yıl boyunca</h2>
+          <p>Kodlama, tasarım ve araştırma derslerinde öğrenci çoğunlukla grup içinde çalışır. Grup görevlerinde eğitmenler gözlem formu kullanır, öğrenciler de birbirlerinin çalışmalarını akran değerlendirmesiyle inceler.</p>
+        </section>
+
+        <section class="akis">
+          <h2>Ders ürünleri</h2>
+          <cu-dersler sinif="2" gorunum="tablo"></cu-dersler>
+        </section>
+
+        <section class="akis">
+          <h2>Yıl sonu sınavı</h2>
+          <dl class="bilgi-listesi">
+            <div><dt>Kapsam</dt><dd>Yılın altı dersi</dd></div>
+            <div><dt>Biçim</dt><dd>Çevrim içi bölüm ve uygulamalı görevler</dd></div>
+            <div><dt>Tarih</dt><dd>Duyurularda ilan edilir</dd></div>
+            <div><dt>Sonuç</dt><dd>Gelişim raporuyla veliye</dd></div>
+          </dl>
+          <p>Yıl sonu sınavı ve ders ürünleri, üçüncü yıldaki atölye seçiminde öğrencinin genel hazırbulunuşluğunu gösteren bilgiler arasında yer alır.</p>
+        </section>
+
+        <section class="akis">
+          <h2>Uzmanlık atölyelerini tanıma</h2>
+          <p>Yılın son haftalarında dört uzmanlık atölyesi tanıtılır. Öğrenci her atölyede kısa bir uygulama yapar, atölyenin eğitmeniyle konuşur ve seçim sürecine hazırlanır.</p>
+          <cu-dersler sinif="3" gorunum="liste"></cu-dersler>
+          <div class="dugmeler"><a class="dugme" href="3-sinif-ders-secimi.html">Ders seçimi sürecini inceleyin</a></div>
+        </section>
+
+        <section class="akis">
+          <h2>Sınav bağlantıları</h2>
+        <div class="qr-alani">
+          <div class="qr-alani__bas">
+            <p>Kodlar sınav dönemi başladığında etkinleşir.</p>
+            <a class="dugme dugme--kucuk dugme--ikincil" href="../olcme/qr-merkezi.html"><cu-ikon ad="qr-code"></cu-ikon><span>QR merkezi</span></a>
+          </div>
+          <cu-qr-panosu grup="2-sinif"></cu-qr-panosu>
+        </div>
+        </section>
+        <cu-sayfa-gecis></cu-sayfa-gecis>
+      </article>
+
+      <aside class="dokuman__sag"><cu-icindekiler></cu-icindekiler></aside>
+    </div>
+  </main>
+
+  <cu-alt></cu-alt>
+</body>
+</html>

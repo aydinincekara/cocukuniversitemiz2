@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2. sınıf: Keşfet | Çocuk Üniversitemiz</title>
+  <meta name="description" content="Çocuk Üniversitemizde 2. sınıf (okulda 5. sınıf): üretim araçlarıyla tanışma, dersler, ders saatleri ve üçüncü yıla hazırlık.">
+  <meta name="theme-color" content="#16235e">
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/ana.css">
+  <script src="../../assets/js/yukleyici.js" defer></script>
+</head>
+<body>
+  <cu-ust></cu-ust>
+
+  <main id="icerik">
+    <cu-sayfa-basligi>
+      <h1>2. sınıf: Keşfet</h1>
+      <p>“Neleri seviyorum?” — İlgi alanlarını ve güçlü yönleri keşfetme yılı.</p>
+    </cu-sayfa-basligi>
+
+    <div class="kapsayici dokuman">
+      <aside class="dokuman__sol"><cu-bolum-menusu></cu-bolum-menusu></aside>
+
+      <article class="dokuman__icerik">
+        <section class="akis">
+          <h2>Bu yılın amacı</h2>
+          <p class="giris-paragrafi">İkinci yıl, merakın beceriye dönüştüğü yıldır: öğrenci üretim araçlarıyla tanışır.</p>
+          <p>Kodlar, tasarlar, araştırır ve her dersin sonunda farklı bir ürün ortaya koyar. Yıl ilerledikçe hangi araçla çalışırken daha istekli olduğu hem kendisi hem eğitmenleri için netleşir.</p>
+        </section>
+
+        <section class="akis">
+          <h2>İkinci yıl dersleri</h2>
+          <cu-dersler sinif="2" program="haftasonu" gorunum="program" baslik="Hafta sonu iki gün, her gün 6 ders"></cu-dersler>
+          <p class="soluk">Toplam, haftada 3 ders saatlik Yabancı Dil Atölyesi dahil edilerek hesaplanmıştır.</p>
+        </section>
+
+        <section class="akis">
+          <h2>Derslerde ne yapılır?</h2>
+          <div class="tablo-kap">
+            <table class="tablo">
+              <thead><tr><th scope="col">Ders</th><th scope="col">Ne yapılır?</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Tasarım Odaklı Düşünme</th><td>İhtiyaç bulma, prototipleme, kullanıcıyla test etme</td></tr>
+                <tr><th scope="row">Kodlama ve Robotik</th><td>Algoritma, sensör, motor, blok tabanlı kodlama ve görev çözümü</td></tr>
+                <tr><th scope="row">Dijital Tasarım Laboratuvarı</th><td>3B modelleme, 3D baskı ve maker atölyesi uygulamaları</td></tr>
+                <tr><th scope="row">Bilimsel Araştırmalar Atölyesi</th><td>Araştırma sorusu, veri toplama, kayıt tutma ve sonuç çıkarma</td></tr>
+                <tr><th scope="row">Sanat Terapisi</th><td>Duyguyu ifade etme, üretim yoluyla rahatlama ve öz farkındalık</td></tr>
+                <tr><th scope="row">Strateji ve Zekâ Oyunları</th><td>Uzun vadeli plan kurma, turnuva formatında karşılaşmalar</td></tr>
+                <tr><th scope="row">Yabancı Dil Atölyesi</th><td>Avrupa standartlarına uygun kurlarla dil becerilerini geliştirme</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="akis">
+          <h2>Derslerin içeriği</h2>
+          <cu-dersler sinif="2" program="haftasonu"></cu-dersler>
+        </section>
+
+        <section class="akis">
+          <h2>Üçüncü yıla hazırlık</h2>
+          <p>Yılın son haftalarında dört uzmanlık atölyesi tanıtılır. Öğrenci atölyelerde kısa uygulamalar yapar, ilgi anketini doldurur, seçim sınavına ve bireysel görüşmeye katılır.</p>
+          <cu-dersler sinif="3" gorunum="liste" tum-haric></cu-dersler>
+          <div class="dugmeler">
+            <a class="dugme" href="../atolyeler/uzmanlik-atolyeleri.html">Uzmanlık atölyelerini inceleyin</a>
+            <a class="dugme dugme--ikincil" href="../olcme/3-sinif-ders-secimi.html">Ders seçimi süreci</a>
+          </div>
+        </section>
+
+        <section class="akis">
+          <h2>Dört yıl içindeki yeri</h2>
+          <cu-dersler gorunum="akis" guncel="2"></cu-dersler>
+        </section>
+        <cu-sayfa-gecis></cu-sayfa-gecis>
+      </article>
+
+      <aside class="dokuman__sag"><cu-icindekiler></cu-icindekiler></aside>
+    </div>
+  </main>
+
+  <cu-alt></cu-alt>
+</body>
+</html>

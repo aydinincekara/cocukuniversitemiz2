@@ -1,0 +1,94 @@
+/* ==========================================================================
+   DEĞİŞKENLER — sitenin görsel kimliği
+   Renkleri, yazı tiplerini ve ölçüleri buradan değiştirin; tüm site güncellenir.
+   ========================================================================== */
+
+/* ---------------------------------------------------------------- Yazı tipleri
+   Siteyle birlikte barındırılır (Google'a istek gitmez).
+   Türkçe karakterler (ğ, ş, İ) latin-ext dosyasındadır. */
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url("../fonts/bricolage-grotesque-latin-opsz-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url("../fonts/bricolage-grotesque-latin-ext-opsz-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("../fonts/lexend-latin-wght-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("../fonts/lexend-latin-ext-wght-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  /* ---------------------------------------------------------------- Temel renkler */
+  --murekkep: #16235e;        /* Ana renk: başlıklar, düğmeler */
+  --murekkep-koyu: #0e1742;   /* Alt bölüm, gece panelleri */
+  --murekkep-2: #2c3c84;      /* Bağlantılar, ikonlar */
+  --murekkep-acik: #e9eefc;   /* Açık zeminler */
+  --kagit: #f5f7fb;           /* Sayfa zemini (kareli defter kâğıdı) */
+  --beyaz: #ffffff;
+  --cizgi: #dce3f1;
+  --cizgi-koyu: #c1cbe2;
+  --kare-cizgi: rgba(22, 35, 94, 0.07);
+  --metin: #18204a;
+  --metin-soluk: #4f5a7c;
+  --vurgu: #ffd23f;           /* QR merkezi düğmesi, odak halkası (koyu zeminde) */
+  --vurgu-koyu: #f2c200;
+
+  /* ---------------------------------------------------------------- Sınıf seviyesi renkleri
+     1/4 Keşif · 2/5 Beceri · 3/6 Uzmanlık · 4/7 Proje
+     -uzeri : renkli zemin üzerindeki yazı rengi
+     -yazi  : açık zeminde büyük renkli yazı (kesir rakamları) */
+  --s1: #0f7f5c;  --s1-acik: #e0f3eb;  --s1-koyu: #0a5c43;  --s1-uzeri: #ffffff;  --s1-yazi: #0f7f5c;
+  --s2: #f0b21c;  --s2-acik: #fdf2d5;  --s2-koyu: #6f4f00;  --s2-uzeri: #16235e;  --s2-yazi: #d19700;
+  --s3: #c8364a;  --s3-acik: #fbe3e6;  --s3-koyu: #9c2436;  --s3-uzeri: #ffffff;  --s3-yazi: #c8364a;
+  --s4: #5b3fd0;  --s4-acik: #eae5fc;  --s4-koyu: #4430a6;  --s4-uzeri: #ffffff;  --s4-yazi: #5b3fd0;
+
+  /* ---------------------------------------------------------------- Yazı */
+  --yazi-baslik: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --yazi-govde: "Lexend", "Segoe UI", system-ui, sans-serif;
+
+  --t-0: 0.8125rem;                                   /* 13px küçük etiketler */
+  --t-1: 0.9375rem;                                   /* 15px arayüz metni */
+  --t-2: 1.0625rem;                                   /* 17px gövde */
+  --t-3: 1.3125rem;                                   /* 21px h3 */
+  --t-4: clamp(1.5rem, 1.25rem + 1vw, 1.875rem);      /* h2 (sayfa içi) */
+  --t-5: clamp(1.875rem, 1.4rem + 2vw, 2.625rem);     /* h2 (ana sayfa bölümleri) */
+  --t-6: clamp(2.25rem, 1.6rem + 2.8vw, 3.375rem);    /* h1 */
+  --t-7: clamp(2.75rem, 1.5rem + 5vw, 5.25rem);       /* ana sayfa başlığı */
+
+  /* ---------------------------------------------------------------- Ölçüler */
+  --genislik: 1240px;
+  --kenar: clamp(1rem, 4vw, 2rem);
+  --ust-yukseklik: 72px;
+  --yaricap-s: 8px;
+  --yaricap-m: 14px;
+  --yaricap-l: 22px;
+  --golge: 0 22px 44px -24px rgba(14, 23, 66, 0.42);
+}
+
+/* Bir öğeye class="seviye-3" verildiğinde içindeki bileşenler o rengi kullanır */
+.seviye-1 { --seviye: var(--s1); --seviye-acik: var(--s1-acik); --seviye-koyu: var(--s1-koyu); --seviye-uzeri: var(--s1-uzeri); --seviye-yazi: var(--s1-yazi); }
+.seviye-2 { --seviye: var(--s2); --seviye-acik: var(--s2-acik); --seviye-koyu: var(--s2-koyu); --seviye-uzeri: var(--s2-uzeri); --seviye-yazi: var(--s2-yazi); }
+.seviye-3 { --seviye: var(--s3); --seviye-acik: var(--s3-acik); --seviye-koyu: var(--s3-koyu); --seviye-uzeri: var(--s3-uzeri); --seviye-yazi: var(--s3-yazi); }
+.seviye-4 { --seviye: var(--s4); --seviye-acik: var(--s4-acik); --seviye-koyu: var(--s4-koyu); --seviye-uzeri: var(--s4-uzeri); --seviye-yazi: var(--s4-yazi); }

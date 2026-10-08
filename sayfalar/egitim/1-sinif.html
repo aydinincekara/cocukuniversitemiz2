@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1. sınıf: Tanı | Çocuk Üniversitemiz</title>
+  <meta name="description" content="Çocuk Üniversitemizde 1. sınıf (okulda 4. sınıf): dersler, ders saatleri, kazanımlar ve yıl sonu değerlendirmesi.">
+  <meta name="theme-color" content="#16235e">
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/ana.css">
+  <script src="../../assets/js/yukleyici.js" defer></script>
+</head>
+<body>
+  <cu-ust></cu-ust>
+
+  <main id="icerik">
+    <cu-sayfa-basligi>
+      <h1>1. sınıf: Tanı</h1>
+      <p>“Ben kimim?” — Öğrenciyi tanıma, gözlemleme ve farklı alanlarla buluşturma yılı.</p>
+    </cu-sayfa-basligi>
+
+    <div class="kapsayici dokuman">
+      <aside class="dokuman__sol"><cu-bolum-menusu></cu-bolum-menusu></aside>
+
+      <article class="dokuman__icerik">
+        <section class="akis">
+          <h2>Bu yılın amacı</h2>
+          <p class="giris-paragrafi">Birinci yıl, dört yıllık yolun temelidir. Öğrenci üniversite kültürünü tanır, bilimsel düşünmenin ve sorgulamanın dilini öğrenir.</p>
+          <p>Akademik Atölye'deki altı modül sayesinde hangi alanlarda daha istekli olduğunu deneyerek görür. Modüller bilinçli olarak kısaltılmaz: amaç, çocuğun ileride ne seçeceğine her alanı gerçekten tadarak karar vermesidir.</p>
+        </section>
+
+        <section class="akis">
+          <h2>Birinci yıl dersleri</h2>
+          <cu-dersler sinif="1" program="haftasonu" gorunum="program" baslik="Hafta sonu bir tam gün"></cu-dersler>
+          <p class="soluk">Toplam, haftada 3 ders saatlik Yabancı Dil Atölyesi dahil edilerek hesaplanmıştır.</p>
+        </section>
+
+        <section class="akis">
+          <h2>Derslerin içeriği</h2>
+          <cu-dersler sinif="1" program="haftasonu"></cu-dersler>
+        </section>
+
+        <section class="akis">
+          <h2>Birinci yılda öğrenci ne kazanır?</h2>
+          <ol class="adimlar seviye-1">
+            <li><h3 class="adimlar__baslik">Soru üretir</h3><p>“Neden?” ve “Nasıl?” sorularını araştırılabilir hâle getirir.</p></li>
+            <li><h3 class="adimlar__baslik">Kanıt kullanır</h3><p>Gözlem ile yorumu ayırır; düşüncesini gerekçelendirir.</p></li>
+            <li><h3 class="adimlar__baslik">Dijital bilinç geliştirir</h3><p>Teknolojiyi yalnızca tüketmek için değil, öğrenmek ve üretmek için kullanır.</p></li>
+            <li><h3 class="adimlar__baslik">Fikrini ifade eder</h3><p>Konuşma çemberinde dinler, sıra alır ve farklı görüşleri değerlendirir.</p></li>
+            <li><h3 class="adimlar__baslik">Çalışmasını planlar</h3><p>Görevi aşamalara böler, zamanını izler ve geri bildirimle geliştirir.</p></li>
+            <li><h3 class="adimlar__baslik">İngilizceyi kullanır</h3><p>Basit yönergeleri anlar, kendini tanıtır ve sınıf içi iletişime katılır.</p></li>
+          </ol>
+        </section>
+
+        <section class="akis">
+          <h2>Yıl sonunda</h2>
+          <p>Her ders kendine özgü bir ürünle tamamlanır ve öğrenci yıl sonu sınavına katılır. Akademik Atölye'den çıkan ilgi haritası, üçüncü yıldaki uzmanlık atölyesi seçiminde kullanılır.</p>
+          <div class="dugmeler">
+            <a class="dugme" href="../olcme/1-sinif-degerlendirme.html">1. sınıf değerlendirme</a>
+            <a class="dugme dugme--ikincil" href="../atolyeler/portfolyo.html">Portfolyo</a>
+          </div>
+        </section>
+
+        <section class="akis">
+          <h2>Dört yıl içindeki yeri</h2>
+          <cu-dersler gorunum="akis" guncel="1"></cu-dersler>
+        </section>
+        <cu-sayfa-gecis></cu-sayfa-gecis>
+      </article>
+
+      <aside class="dokuman__sag"><cu-icindekiler></cu-icindekiler></aside>
+    </div>
+  </main>
+
+  <cu-alt></cu-alt>
+</body>
+</html>

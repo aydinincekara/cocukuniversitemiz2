@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Çocuk Üniversitemiz logosu">
+  <title>Çocuk Üniversitemiz</title>
+  <rect width="64" height="64" rx="16" fill="#16235E"/>
+  <!-- Dört basamak: 1/4 Keşif, 2/5 Beceri, 3/6 Uzmanlık, 4/7 Proje -->
+  <rect x="11" y="38" width="9" height="15" rx="2.5" fill="#15A474"/>
+  <rect x="22" y="31" width="9" height="22" rx="2.5" fill="#F0B21C"/>
+  <rect x="33" y="24" width="9" height="29" rx="2.5" fill="#E04A5F"/>
+  <rect x="44" y="17" width="9" height="36" rx="2.5" fill="#7A61F0"/>
+  <!-- Merak yıldızı -->
+  <path d="M22.5 9.5l1.9 4.1 4.1 1.9-4.1 1.9-1.9 4.1-1.9-4.1-4.1-1.9 4.1-1.9z" fill="#FFD23F"/>
+</svg>

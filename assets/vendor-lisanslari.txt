@@ -1,0 +1,19 @@
+Bu sitede kullanılan üçüncü taraf bileşenler
+===========================================
+
+1) QR Code Generator for JavaScript (qrcode-generator 2.0.4)
+   Kazuhiko Arase — MIT Lisansı — assets/js/vendor/qrcode.js
+   "QR Code" DENSO WAVE INCORPORATED'ın tescilli markasıdır.
+
+2) Bricolage Grotesque (değişken yazı tipi) — SIL Open Font License 1.1
+   assets/fonts/bricolage-grotesque-*.woff2
+
+3) Lexend (değişken yazı tipi) — SIL Open Font License 1.1
+   assets/fonts/lexend-*.woff2
+
+4) Lucide ikonları (lucide-static 1.45.0) — ISC Lisansı
+   assets/js/ikonlar.js dosyasındaki SVG çizimleri
+   Copyright (c) Lucide Icons and Contributors
+
+Yazı tipleri ve ikonlar siteyle birlikte barındırılır; ziyaretçi bilgisi
+üçüncü taraf bir sunucuya gönderilmez.

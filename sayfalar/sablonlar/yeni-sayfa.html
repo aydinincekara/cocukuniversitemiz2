@@ -1,0 +1,77 @@
+<!doctype html>
+<!-- ==========================================================================
+     YENİ SAYFA ŞABLONU
+     --------------------------------------------------------------------------
+     1) Bu dosyayı sayfalar/ altındaki bir klasöre kopyalayın
+        (kurumsal, egitim, olcme, etkinlikler ya da yeni bir klasör).
+        Klasör derinliği aynı kaldığı sürece ../../ yollarını değiştirmeyin.
+     2) Başlık, açıklama ve içerik bölümlerini düzenleyin.
+     3) assets/veri/menu.js dosyasında ilgili gruba bir satır ekleyin:
+          { baslik: "Sayfa adı", yol: "sayfalar/klasor/dosya.html",
+            aciklama: "Kısa açıklama", ikon: "star" },
+        Üst menü, alt bölüm, sol menü ve sayfa geçişleri kendiliğinden güncellenir.
+
+     Kullanılabilir hazır bileşenler:
+       <cu-dersler sinif="2"></cu-dersler>              Ders kartları
+       <cu-dersler sinif="2" gorunum="tablo">           Ders – ürün tablosu
+       <cu-qr kod="s3-ilgi-anketi"></cu-qr>             Tek QR kartı
+       <cu-qr-panosu grup="3-sinif-secim">              Gruba ait QR kartları
+       <cu-duyurular sinir="3"></cu-duyurular>          Son duyurular
+       <cu-ikon ad="telescope"></cu-ikon>               İkon
+       class="adimlar"  Numaralı süreç   class="tablo"  Tablo
+       class="not"      Bilgi kutusu     class="sss"    Sık sorulan sorular
+     Örnekler için sayfalar/olcme/3-sinif-ders-secimi.html dosyasına bakın.
+     ========================================================================== -->
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sayfa başlığı | Çocuk Üniversitemiz</title>
+  <meta name="description" content="Arama motorlarında görünecek bir iki cümlelik açıklama.">
+  <meta name="theme-color" content="#16235e">
+  <meta name="robots" content="noindex"> <!-- Kopyaladıktan sonra bu satırı silin -->
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/ana.css">
+  <script src="../../assets/js/yukleyici.js" defer></script>
+</head>
+<body>
+  <cu-ust></cu-ust>
+
+  <main id="icerik">
+    <!-- Sınıf seviyesine ait bir sayfaysa seviye="1" … "4" ekleyin
+         (menu.js'te seviye verdiyseniz gerek yok) -->
+    <cu-sayfa-basligi>
+      <h1>Sayfa başlığı</h1>
+      <p>Sayfanın ne anlattığını söyleyen kısa bir giriş cümlesi.</p>
+    </cu-sayfa-basligi>
+
+    <div class="kapsayici dokuman">
+      <aside class="dokuman__sol"><cu-bolum-menusu></cu-bolum-menusu></aside>
+
+      <article class="dokuman__icerik">
+        <!-- Her <section> bir bölümdür. <h2> başlıkları sağdaki
+             "Bu sayfada" listesine kendiliğinden eklenir. -->
+        <section class="akis">
+          <h2>Birinci bölüm</h2>
+          <p>Paragraf metni.</p>
+          <ul class="isaretli-liste">
+            <li>Madde</li>
+            <li>Madde</li>
+          </ul>
+        </section>
+
+        <section class="akis">
+          <h2>İkinci bölüm</h2>
+          <div class="not"><cu-ikon ad="info"></cu-ikon><div><p>Bilgi kutusu metni.</p></div></div>
+        </section>
+
+        <cu-sayfa-gecis></cu-sayfa-gecis>
+      </article>
+
+      <aside class="dokuman__sag"><cu-icindekiler></cu-icindekiler></aside>
+    </div>
+  </main>
+
+  <cu-alt></cu-alt>
+</body>
+</html>

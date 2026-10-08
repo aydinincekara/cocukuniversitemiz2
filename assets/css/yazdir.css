@@ -1,0 +1,54 @@
+/* ==========================================================================
+   YAZDIRMA — yalnızca yazıcıya gönderilirken uygulanır
+   ========================================================================== */
+
+@page { margin: 14mm; }
+
+body { background: #fff; color: #000; font-size: 11pt; }
+a { color: #000; }
+
+cu-ust, cu-alt, cu-bolum-menusu, cu-icindekiler, cu-sayfa-gecis,
+.atla-baglanti, .qr-filtre, .qr-filtre__sonuc, .qr-kart__eylemler, .dugme, .not--uyari {
+  display: none !important;
+}
+
+.dokuman { display: block; padding: 0; }
+cu-sayfa-basligi { padding: 0 0 6mm; border: 0; box-shadow: none; background: none; }
+cu-sayfa-basligi::before { display: none; }
+h2, h3 { break-after: avoid; }
+.ders, .kutu, .qr-kart, .tablo-kap, .adimlar > li { break-inside: avoid; }
+.qr-kart__adres { display: block; margin-top: 2mm; font-size: 8pt; color: #333; word-break: break-all; }
+
+/* ---------------------------------------------------------------- QR yazdırma modu */
+html.qr-yazdiriliyor body > :not(#qr-yazdirma-alani) { display: none !important; }
+html.qr-yazdiriliyor #qr-yazdirma-alani { display: block !important; }
+
+.qr-yazdirma__kurum { font: 600 10pt var(--yazi-govde); color: #333; margin-bottom: 6mm; }
+.qr-yazdirma .qr-kart { border: 1px solid #999; box-shadow: none; opacity: 1; grid-template-areas: none; }
+.qr-yazdirma .etiket { border: 1px solid #999; background: none; color: #000; }
+.qr-yazdirma .etiket--durum { display: none; }
+
+/* Tek kart: A4 afiş */
+.qr-yazdirma--tek .qr-kart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6mm;
+  padding: 12mm 10mm;
+  text-align: center;
+  border-width: 2px;
+  border-color: #16235e;
+}
+.qr-yazdirma--tek .qr-kart__kod { width: 115mm; border: 0; }
+.qr-yazdirma--tek .qr-kart__etiketler { justify-content: center; }
+.qr-yazdirma--tek .qr-kart__baslik { font-size: 24pt; margin-top: 0; }
+.qr-yazdirma--tek .qr-kart__aciklama { font-size: 13pt; color: #222; }
+.qr-yazdirma--tek .qr-kart__tarih { justify-content: center; font-size: 12pt; }
+.qr-yazdirma--tek .qr-kart__adres { font-size: 9pt; }
+
+/* Toplu: sayfa başına 6 kart */
+html.qr-yazdiriliyor #qr-yazdirma-alani.qr-yazdirma--toplu { display: grid !important; grid-template-columns: 1fr 1fr; gap: 6mm; }
+.qr-yazdirma--toplu .qr-yazdirma__kurum { grid-column: 1 / -1; margin-bottom: 0; }
+.qr-yazdirma--toplu .qr-kart { grid-template-columns: 38mm 1fr; grid-template-areas: "kod bilgi"; gap: 4mm; padding: 4mm; }
+.qr-yazdirma--toplu .qr-kart__baslik { font-size: 12pt; }
+.qr-yazdirma--toplu .qr-kart__aciklama { font-size: 9pt; }

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sayfa bulunamadı | Çocuk Üniversitemiz</title>
+  <meta name="robots" content="noindex">
+  <!-- GitHub Pages bu sayfayı hatalı adreslerde gösterir; bu yüzden stiller dosyanın içindedir. -->
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 2rem;
+      background: #f5f7fb; color: #18204a; font-family: "Segoe UI", system-ui, sans-serif; line-height: 1.6; }
+    main { max-width: 34rem; }
+    .kesir { font-weight: 800; font-size: 5rem; line-height: 1; color: #16235e; letter-spacing: -0.04em; }
+    .kesir span { font-weight: 300; opacity: .5; }
+    .kesir small { font-size: .6em; font-weight: 600; }
+    h1 { margin: 1rem 0 .5rem; font-size: 1.75rem; color: #16235e; }
+    p { margin: 0; color: #4f5a7c; }
+    a { display: inline-block; margin-top: 1.5rem; padding: .7rem 1.2rem; border-radius: 999px;
+      background: #16235e; color: #fff; font-weight: 600; text-decoration: none; }
+    a:focus-visible { outline: 3px solid #ffd23f; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="kesir" aria-hidden="true">4<span>/</span><small>04</small></p>
+    <h1>Bu sayfa bulunamadı</h1>
+    <p>Adres yanlış yazılmış ya da sayfa taşınmış olabilir. Ana sayfadan menüyü kullanarak aradığınız içeriğe ulaşabilirsiniz.</p>
+    <a id="ana-sayfa" href="/">Ana sayfaya dön</a>
+  </main>
+  <script>
+    /* GitHub proje sitelerinde (kullanici.github.io/depo-adi/) ana sayfa adresini bul */
+    (function () {
+      var parca = location.pathname.split("/").filter(Boolean);
+      if (/\.github\.io$/.test(location.hostname) && parca.length) {
+        document.getElementById("ana-sayfa").href = "/" + parca[0] + "/";
+      }
+    })();
+  </script>
+</body>
+</html>
